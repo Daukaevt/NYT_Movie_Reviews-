@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYTimesMoovies</string>
+    <string name="app_title">The New York Times</string>
+    <string name="app_subTitle">Movie Reviews</string>
+    <string name="moovieTitle">Title</string>
+    <string name="moovieContent">Content</string>
+</resources>
