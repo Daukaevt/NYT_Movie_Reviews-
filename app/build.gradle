@@ -17,6 +17,12 @@ android {
     }
 
     buildTypes {
+
+            debug {
+                //api-key=RrM46TJB7XxwoYZZA53NSAc8jdtTgIwN
+
+            }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -62,3 +68,5 @@ dependencies {
     implementation("androidx.paging:paging-runtime-ktx:3.1.0")
 
 }
+
+//api-key=RrM46TJB7XxwoYZZA53NSAc8jdtTgIwN
