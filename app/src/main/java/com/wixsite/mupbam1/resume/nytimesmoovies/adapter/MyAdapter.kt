@@ -22,7 +22,6 @@ class MyAdapter(val cntxt: Context, private val tags: ArrayList<String>) : Recyc
 
         }
 
-
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
             var context=parent.context
             val itemView = LayoutInflater.from(parent.context)

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.wixsite.mupbam1.resume.nytimesmoovies.adapter.MyAdapter
+import com.wixsite.mupbam1.resume.nytimesmoovies.data.NestedJSONModel
 import com.wixsite.mupbam1.resume.nytimesmoovies.databinding.ActivityMainBinding
 import com.wixsite.mupbam1.resume.nytimesmoovies.service.RetrofitInstance
 import kotlinx.coroutines.CoroutineScope
@@ -48,11 +49,13 @@ class MainActivity : AppCompatActivity() {
                     val items = response.body()
                     val results=items?.results
 
+
                     if (results !=null) {
                         for (i in 0..results.size-1){
                             val item_results = results.get(i)
                             var multimediaSRC = item_results.multimedia.src
                             tags.add(multimediaSRC)
+
                             var display_title = item_results.display_title
                             tags.add(display_title)
                             var summary_short = item_results.summary_short
